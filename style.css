@@ -1,0 +1,339 @@
+:root{
+    --white:white;
+    --antiquwhite:antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* !Ortak Alanlar */
+
+.align-section{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.align-item{
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-basis: 30%;
+    margin-bottom: 40px;
+}
+
+
+/* ! Header Alanı Start */
+
+header{
+    background-color:var(--antiquwhite);
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,10,35,0.7),rgba(5,10,35,0.7)), url(img/bg.webp);
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+nav a img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color:var(--white);
+
+}
+
+.nav-links ul li a::after{
+    content: "";
+    background-color: red;
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 3px;
+
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+.bi-list{
+    color:var(--white);
+    font-size: 30px;
+    margin-right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.bi-list:hover{
+    transform: scale(1.1);
+}
+
+/* ! Header Alanı End */
+
+/* !Text Box */
+
+.text-box{
+    color: var(--white);
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+    margin: 10px 40px;
+    font-size: 15px;
+    color:var(--white);
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--white);
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-btn:hover{
+    border-color: red;
+    background-color: red;
+    transition: .3s;
+}
+
+/* ! Course Area */
+
+
+section h1{
+    font-size: 35px;
+}
+
+section p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    background-color: var(--antiquwhite);
+    
+}
+
+.course-col:hover{
+    box-shadow: 0 0 10px rgba(5,10,35,0.7);
+    transition: .3;
+}
+
+section div div h3{
+    margin: 10px 0;
+}
+
+/* ! Kampus Area */
+
+
+.campus-col{
+    position: relative;
+    overflow: hidden;
+   
+ }
+
+.campus-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+}
+
+.layer:hover{
+    background-color: rgba(200,100,50,0.5);
+}
+
+.layer h3{
+    color: var(--white);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+
+.layer:hover h3{
+    opacity: 1;
+    transition: .3s;
+    bottom: 50%;
+    
+}
+
+/* ! liblaries */
+ 
+.facilities-col{
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ! Yorumlar */
+
+.testemonials-col{
+    background-color: var(--antiquwhite);
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+    
+    
+}
+
+.testemonials-col img{
+   height: 50px;
+   margin: 5px 10px;
+   border-radius: 50%;
+}
+
+.testemonials-col div p{
+    padding: 0;
+}
+.testemonials-col div p::first-letter{
+    font-size: 20px;
+}
+
+.testemonials-col div h2{
+    margin-top: 15px;
+
+}
+.testemonials-col div .bi{
+    color: red;
+}
+
+/* ! hızlı ulaşım alnı */
+
+.au{
+    background:linear-gradient(rgba(5,10,35,0.7),rgba(5,10,35,0.7)), url(img/bg.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.au h1{
+    color: var(--white);
+    margin-bottom: 40px;
+    padding: 0;
+
+
+}
+/* !footer alanı */
+
+footer{
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+footer h2{
+    margin: 25px 0;
+
+}
+.icons{
+    margin: 10px;
+}
+ .icons .bi{
+    margin:0 10px;
+    cursor: pointer;
+    padding: 20px 10px;
+ }
+ .bi-linkedin, .bi-facebook{
+    color: blue !important;
+ }
+ .bi-instagram{
+    color:rgb(239, 95, 5);
+ }
+
+ .bi-heart-fill{
+    color: red;
+    margin: 10px;
+ }
+
+
+
+/* ! Responsive Area */
+
+@media (max-width:768px)  {
+
+    .nav-links{
+        display: none;
+    }
+    .bi-list{
+        display: block;
+    }
+    .text-box h1{
+        font-size: 30px;
+    }
+    .row{
+        display: block;
+    }
+    .au h1{
+        font-size: 25px;
+    }
+
+}
+    
+
+/* ! Responsive Area End */
