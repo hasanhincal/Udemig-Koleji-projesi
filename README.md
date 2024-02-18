@@ -1,14 +1,16 @@
 <h1>Udemig College Project</h1>
 
-<h2>Kullanılan Teklonojiler</h2>
+It is an application that increases interaction between students and teachers.
 
-HTML5 ve CSS3 
+<h2>Techlonogies used in the project</h2>
 
-<h2>Ekran Gifi</h2>
+Codded in HTML5 ve CSS3 
+
+<h2>Screen Gif</h2>
 
 ![](screen.gif)
 
-<h2>Ekran Görüntüsü</h2>
+<h2>Screen picture</h2>
 
 ![](Ekran%20görüntü1.png)
 
